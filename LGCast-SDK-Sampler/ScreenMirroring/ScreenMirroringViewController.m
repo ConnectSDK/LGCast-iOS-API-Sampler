@@ -61,7 +61,7 @@ NSString *kConnectableDeviceIpAddressKey = @"ConnectableDeviceIpAddressKey";
 - (void)drawBroadcastPickerView {
     if (@available(iOS 12.0, *)) {
         RPSystemBroadcastPickerView *rpPickerView = [[RPSystemBroadcastPickerView alloc] initWithFrame:_rpPickerView.bounds];
-        rpPickerView.preferredExtension = [NSBundle.mainBundle.bundleIdentifier stringByAppendingString:@".BroadcastUploadExtension"];
+        rpPickerView.preferredExtension = @"YOUR EXTENTION BUNDLE ID"; /* TODO:: CHANGE TO YOUR APP GROUP ID */
         rpPickerView.showsMicrophoneButton = NO;
         UIButton *button = rpPickerView.subviews.firstObject;
         button.imageView.tintColor = UIColor.whiteColor;
@@ -106,7 +106,7 @@ NSString *kConnectableDeviceIpAddressKey = @"ConnectableDeviceIpAddressKey";
 // MARK: DevicePickerDelegate
 
 - (void)devicePicker:(DevicePicker *)picker didSelectDevice:(ConnectableDevice *)device {
-    NSString *groupId = @"AppGroupId"; /* TODO:: CHANGE TO YOUR APP GROUP ID */
+    NSString *groupId = @"YOUR APP GROUP ID"; /* TODO:: CHANGE TO YOUR APP GROUP ID */
     
     NSUserDefaults *sharedDefaults = [[NSUserDefaults alloc] initWithSuiteName:groupId];
     [sharedDefaults setObject:device.address forKey:kConnectableDeviceIpAddressKey];
