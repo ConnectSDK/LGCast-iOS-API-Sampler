@@ -520,17 +520,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.0;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"ConnectSDK\"",
-					"-l\"icucore\"",
-					"-l\"z\"",
-					"-framework",
-					"\"GStreamerForLGCast\"",
-					"-framework",
-					"\"LGCast\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.M7KLZUR99W.LGCast-SDK-Sampler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -562,17 +552,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.0;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"ConnectSDK\"",
-					"-l\"icucore\"",
-					"-l\"z\"",
-					"-framework",
-					"\"GStreamerForLGCast\"",
-					"-framework",
-					"\"LGCast\"",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.M7KLZUR99W.LGCast-SDK-Sampler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -602,6 +582,7 @@
 					"$(inherited)",
 				);
 				MARKETING_VERSION = 1.2.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.M7KLZUR99W.LGCast-SDK-Sampler.BroadcastUploadExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -632,6 +613,7 @@
 					"$(inherited)",
 				);
 				MARKETING_VERSION = 1.2.0;
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.M7KLZUR99W.LGCast-SDK-Sampler.BroadcastUploadExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

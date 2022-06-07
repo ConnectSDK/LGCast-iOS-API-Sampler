@@ -2,8 +2,33 @@
 ------------------
 
 Podfile에 `pod "ConnectSDK"`를 추가한 후 `pod install`을 실행하여 workspace를 생성합니다.
+스크린 미러링 기능을 위한 Extension의 경우 APPLICATION_EXTENSION_API_ONLY 를 No로 설정해주어야 합니다.
 
-    pod 'ConnectSDK/Core', :git => 'https://github.com/ConnectSDK/Connect-SDK-iOS.git', :branch => 'master', :submodules => true
+	platform :ios, '12.0'
+	
+	def app_pods
+	    pod 'ConnectSDK/Core', :git => 'https://github.com/ConnectSDK/Connect-SDK-iOS.git', :branch => 'master', :submodules => true
+	end
+	
+	target 'LGCast-SDK-Sampler' do
+	  use_frameworks!
+	  app_pods
+	
+	end
+	
+	target 'LGCast-SDK-Sampler-Extension' do
+	  use_frameworks!
+	  app_pods
+	
+	    post_install do |installer|
+	      installer.pods_project.targets.each do |target|
+	        target.build_configurations.each do |config|
+	          config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'No'
+	        end
+	      end
+	    end
+	end
+
 
 <br>
 
