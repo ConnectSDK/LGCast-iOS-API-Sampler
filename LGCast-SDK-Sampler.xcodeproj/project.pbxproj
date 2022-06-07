@@ -521,7 +521,7 @@
 				);
 				MARKETING_VERSION = 1.2.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.M7KLZUR99W.LGCast-SDK-Sampler";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.$(DEVELOPMENT_TEAM).LGCast-SDK-Sampler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_WORKSPACE = YES;
@@ -553,7 +553,7 @@
 				);
 				MARKETING_VERSION = 1.2.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.M7KLZUR99W.LGCast-SDK-Sampler";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.$(DEVELOPMENT_TEAM).LGCast-SDK-Sampler";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_WORKSPACE = YES;
@@ -583,7 +583,7 @@
 				);
 				MARKETING_VERSION = 1.2.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.M7KLZUR99W.LGCast-SDK-Sampler.BroadcastUploadExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.$(DEVELOPMENT_TEAM).LGCast-SDK-Sampler.BroadcastUploadExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -614,7 +614,7 @@
 				);
 				MARKETING_VERSION = 1.2.0;
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.M7KLZUR99W.LGCast-SDK-Sampler.BroadcastUploadExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lge.lgcast.sdksampler.$(DEVELOPMENT_TEAM).LGCast-SDK-Sampler.BroadcastUploadExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
