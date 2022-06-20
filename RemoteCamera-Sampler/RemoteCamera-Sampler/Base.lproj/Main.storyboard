@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nfD-tb-RdT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RemoteCamera-->
+        <scene sceneID="PcA-co-mq1">
+            <objects>
+                <viewController id="nfD-tb-RdT" userLabel="RemoteCamera" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ygf-0w-Iin">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2c0-Bd-mlN" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="39" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MGY-Dg-fUp" userLabel="Guide View">
+                                        <rect key="frame" x="20" y="269.5" width="374" height="279"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REMOTE CAMERA SAMPLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlg-ZR-G2Q">
+                                                <rect key="frame" x="47" y="30" width="280" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="r63-cE-oLv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="With Connect SDK integrated in the mobile app, it can display camera preview on the TV screen." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7n-X0-nQq" userLabel="Guide 1">
+                                                <rect key="frame" x="20" y="100" width="334" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYV-WR-Riz" userLabel="Guide 2">
+                                                <rect key="frame" x="20" y="143.5" width="334" height="50.5"/>
+                                                <string key="text"> This allows you to use your mobile device’s camera as a remote camera for the TV that does not have an internal or USB camera. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL7-KA-1dm">
+                                                <rect key="frame" x="20" y="214" width="334" height="35"/>
+                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="O6L-vX-Ypb"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="  Select your webOS TV" image="tv" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="selectTV:" destination="nfD-tb-RdT" eventType="touchUpInside" id="zxt-bh-M6O"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Tlg-ZR-G2Q" firstAttribute="centerX" secondItem="MGY-Dg-fUp" secondAttribute="centerX" id="2jy-Sd-U6s"/>
+                                            <constraint firstAttribute="trailing" secondItem="G7n-X0-nQq" secondAttribute="trailing" constant="20" id="703-Qv-yXT"/>
+                                            <constraint firstItem="Tlg-ZR-G2Q" firstAttribute="top" secondItem="MGY-Dg-fUp" secondAttribute="top" constant="30" id="Ex8-ya-58W"/>
+                                            <constraint firstItem="rYV-WR-Riz" firstAttribute="leading" secondItem="MGY-Dg-fUp" secondAttribute="leading" constant="20" id="Hnp-HG-owM"/>
+                                            <constraint firstItem="G7n-X0-nQq" firstAttribute="leading" secondItem="MGY-Dg-fUp" secondAttribute="leading" constant="20" id="K64-Ry-uhX"/>
+                                            <constraint firstItem="JL7-KA-1dm" firstAttribute="leading" secondItem="MGY-Dg-fUp" secondAttribute="leading" constant="20" id="Phl-wX-3qa"/>
+                                            <constraint firstItem="JL7-KA-1dm" firstAttribute="top" secondItem="rYV-WR-Riz" secondAttribute="bottom" constant="20" id="TSZ-6s-PXj"/>
+                                            <constraint firstAttribute="trailing" secondItem="rYV-WR-Riz" secondAttribute="trailing" constant="20" id="gyH-IW-Uvd"/>
+                                            <constraint firstItem="G7n-X0-nQq" firstAttribute="top" secondItem="Tlg-ZR-G2Q" secondAttribute="bottom" constant="20" id="iaG-q6-wjg"/>
+                                            <constraint firstItem="rYV-WR-Riz" firstAttribute="top" secondItem="G7n-X0-nQq" secondAttribute="bottom" constant="10" id="kwu-Ye-Vwm"/>
+                                            <constraint firstAttribute="bottom" secondItem="JL7-KA-1dm" secondAttribute="bottom" constant="30" id="nP0-qU-6SI"/>
+                                            <constraint firstAttribute="trailing" secondItem="JL7-KA-1dm" secondAttribute="trailing" constant="20" id="ns1-1e-5jc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="MGY-Dg-fUp" firstAttribute="centerY" secondItem="2c0-Bd-mlN" secondAttribute="centerY" id="38P-Ho-Uag"/>
+                                    <constraint firstItem="MGY-Dg-fUp" firstAttribute="leading" secondItem="2c0-Bd-mlN" secondAttribute="leading" constant="20" id="BgB-gu-Mhh"/>
+                                    <constraint firstAttribute="trailing" secondItem="MGY-Dg-fUp" secondAttribute="trailing" constant="20" id="I6d-iB-Moy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JGU-Wc-VD1"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="2c0-Bd-mlN" firstAttribute="centerY" secondItem="ygf-0w-Iin" secondAttribute="centerY" id="8sy-Ii-2QU"/>
+                            <constraint firstItem="2c0-Bd-mlN" firstAttribute="centerX" secondItem="ygf-0w-Iin" secondAttribute="centerX" id="V6i-6Z-tSL"/>
+                            <constraint firstItem="2c0-Bd-mlN" firstAttribute="height" secondItem="JGU-Wc-VD1" secondAttribute="height" id="paa-vr-Te9"/>
+                            <constraint firstItem="2c0-Bd-mlN" firstAttribute="width" secondItem="JGU-Wc-VD1" secondAttribute="width" id="zZB-VJ-1ng"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectTVButton" destination="JL7-KA-1dm" id="IYS-Sz-Q1f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CxU-QC-9gi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476.81159420289856" y="-251.11607142857142"/>
+        </scene>
+        <!--Remote Camera View Controller-->
+        <scene sceneID="U19-Gs-P7O">
+            <objects>
+                <viewController storyboardIdentifier="RemoteCameraViewController" id="PBO-ha-gQc" customClass="RemoteCameraViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vvu-oi-Dzu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQi-KN-cSG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lL8-lf-03L" userLabel="changeMicrophoneButton">
+                                        <rect key="frame" x="10" y="777" width="100" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="ou8-nf-e0E"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="r34-HV-sxk" userLabel="width = 50"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Mute"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="touchUpMuteMicrophoneButton:" destination="PBO-ha-gQc" eventType="touchUpInside" id="S0k-qk-sxF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOV-t6-ujk" userLabel="changeCameraButton">
+                                        <rect key="frame" x="359" y="777" width="45" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="29J-oj-z4O"/>
+                                            <constraint firstAttribute="width" constant="45" id="LjI-sK-NbY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="camera.rotate.fill" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="touchUpChangeCameraButton:" destination="PBO-ha-gQc" eventType="touchUpInside" id="yqw-X5-E43"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MR5-7C-bC4" userLabel="stopButton">
+                                        <rect key="frame" x="359" y="10" width="45" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="9rZ-mv-WXg"/>
+                                            <constraint firstAttribute="width" constant="45" id="FJ8-Dg-o1j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="xmark" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="touchUpStopButton:" destination="PBO-ha-gQc" eventType="touchUpInside" id="5zh-97-Wyv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MR5-7C-bC4" firstAttribute="top" secondItem="eQi-KN-cSG" secondAttribute="top" constant="10" id="8Dt-Ec-6iq"/>
+                                    <constraint firstAttribute="trailing" secondItem="MR5-7C-bC4" secondAttribute="trailing" constant="10" id="J3B-d1-kD2"/>
+                                    <constraint firstAttribute="bottom" secondItem="kOV-t6-ujk" secondAttribute="bottom" constant="10" id="OEJ-rG-Y4u"/>
+                                    <constraint firstItem="lL8-lf-03L" firstAttribute="leading" secondItem="eQi-KN-cSG" secondAttribute="leading" constant="10" id="Tgn-yG-a4n"/>
+                                    <constraint firstAttribute="trailing" secondItem="kOV-t6-ujk" secondAttribute="trailing" constant="10" id="ral-lv-Wn1"/>
+                                    <constraint firstAttribute="bottom" secondItem="lL8-lf-03L" secondAttribute="bottom" constant="10" id="vMb-ki-MMq"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SV7-VV-3lY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eQi-KN-cSG" firstAttribute="leading" secondItem="SV7-VV-3lY" secondAttribute="leading" id="Dno-4p-pum"/>
+                            <constraint firstItem="eQi-KN-cSG" firstAttribute="top" secondItem="SV7-VV-3lY" secondAttribute="top" id="Gtw-Cn-PD7"/>
+                            <constraint firstItem="eQi-KN-cSG" firstAttribute="trailing" secondItem="SV7-VV-3lY" secondAttribute="trailing" id="Vxj-o7-5dz"/>
+                            <constraint firstItem="eQi-KN-cSG" firstAttribute="bottom" secondItem="SV7-VV-3lY" secondAttribute="bottom" id="hFq-oi-I23"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="changeCameraButton" destination="kOV-t6-ujk" id="hbe-6D-qI2"/>
+                        <outlet property="muteMicrophoneButton" destination="lL8-lf-03L" id="c1m-cV-k1z"/>
+                        <outlet property="stopButton" destination="MR5-7C-bC4" id="yHw-MJ-cHJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y7I-rN-Rgs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1187" y="-251"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera.rotate.fill" catalog="system" width="128" height="94"/>
+        <image name="tv" catalog="system" width="128" height="97"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
