@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NDF-mu-fOw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ScreenMirroring-->
+        <scene sceneID="J4a-YQ-QQl">
+            <objects>
+                <viewController id="NDF-mu-fOw" userLabel="ScreenMirroring" customClass="ScreenMirroringViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZG-0k-R8Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2vw-Y4-oiB" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="85" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3nn-t7-HOy" userLabel="Guide View">
+                                        <rect key="frame" x="20" y="199.5" width="374" height="419.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCREEN MIRRORING SAMPLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lva-mt-qeW">
+                                                <rect key="frame" x="33.5" y="30" width="307.5" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ZhS-oE-GKy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="With Connect SDK integrated in the mobile app, it can cast the screen and sound into the TV screen." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lht-Hm-9Dz" userLabel="Guide 1">
+                                                <rect key="frame" x="20" y="100" width="334" height="50.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This allows you to extend the screen of a mobile app to a larger TV screen and share it with your family. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q62-Hj-dF6" userLabel="Guide 2">
+                                                <rect key="frame" x="20" y="160.5" width="334" height="50.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7E-ym-qLl">
+                                                <rect key="frame" x="20" y="231" width="334" height="35"/>
+                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="Fa4-4p-SUK"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="  Select your webOS TV" image="tv" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchUpTVDiscoveryButton:" destination="NDF-mu-fOw" eventType="touchUpInside" id="tB2-7I-rlV"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQI-7T-HYs" userLabel="RPPickerView">
+                                                <rect key="frame" x="157" y="339.5" width="60" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Tav-UG-bEu"/>
+                                                    <constraint firstAttribute="width" constant="60" id="yBX-XI-yvr"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you can run the screen mirroring via Screen Broadcast." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRP-NQ-ejQ" userLabel="Guide 2">
+                                                <rect key="frame" x="20" y="286" width="334" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Lva-mt-qeW" firstAttribute="top" secondItem="3nn-t7-HOy" secondAttribute="top" constant="30" id="22I-ST-pg6"/>
+                                            <constraint firstAttribute="trailing" secondItem="S7E-ym-qLl" secondAttribute="trailing" constant="20" id="6V4-Cm-wJx"/>
+                                            <constraint firstItem="FRP-NQ-ejQ" firstAttribute="top" secondItem="S7E-ym-qLl" secondAttribute="bottom" constant="20" id="770-m1-Dxf"/>
+                                            <constraint firstAttribute="bottom" secondItem="VQI-7T-HYs" secondAttribute="bottom" constant="20" id="7Nw-0G-LdH"/>
+                                            <constraint firstItem="Lht-Hm-9Dz" firstAttribute="top" secondItem="Lva-mt-qeW" secondAttribute="bottom" constant="20" id="7l6-hz-At6"/>
+                                            <constraint firstItem="q62-Hj-dF6" firstAttribute="top" secondItem="Lht-Hm-9Dz" secondAttribute="bottom" constant="10" id="CMI-ed-9NX"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lht-Hm-9Dz" secondAttribute="trailing" constant="20" id="L5w-fe-725"/>
+                                            <constraint firstAttribute="trailing" secondItem="FRP-NQ-ejQ" secondAttribute="trailing" constant="20" id="Lnh-s4-SZP"/>
+                                            <constraint firstItem="VQI-7T-HYs" firstAttribute="top" secondItem="FRP-NQ-ejQ" secondAttribute="bottom" constant="20" id="LwX-k1-auM"/>
+                                            <constraint firstItem="S7E-ym-qLl" firstAttribute="top" secondItem="q62-Hj-dF6" secondAttribute="bottom" constant="20" id="RFu-xA-mOR"/>
+                                            <constraint firstItem="q62-Hj-dF6" firstAttribute="leading" secondItem="3nn-t7-HOy" secondAttribute="leading" constant="20" id="eMp-Uc-1u7"/>
+                                            <constraint firstItem="Lva-mt-qeW" firstAttribute="centerX" secondItem="3nn-t7-HOy" secondAttribute="centerX" id="edq-Z8-JIx"/>
+                                            <constraint firstItem="VQI-7T-HYs" firstAttribute="centerX" secondItem="3nn-t7-HOy" secondAttribute="centerX" id="hmX-eV-MJG"/>
+                                            <constraint firstItem="Lht-Hm-9Dz" firstAttribute="leading" secondItem="3nn-t7-HOy" secondAttribute="leading" constant="20" id="r0A-Lw-KeI"/>
+                                            <constraint firstItem="FRP-NQ-ejQ" firstAttribute="leading" secondItem="3nn-t7-HOy" secondAttribute="leading" constant="20" id="rAA-Ae-t2i"/>
+                                            <constraint firstItem="S7E-ym-qLl" firstAttribute="leading" secondItem="3nn-t7-HOy" secondAttribute="leading" constant="20" id="twY-uj-8Ra"/>
+                                            <constraint firstAttribute="trailing" secondItem="q62-Hj-dF6" secondAttribute="trailing" constant="20" id="xrw-ws-bW9"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="3nn-t7-HOy" firstAttribute="centerY" secondItem="2vw-Y4-oiB" secondAttribute="centerY" id="D5W-VU-6Vo"/>
+                                    <constraint firstAttribute="trailing" secondItem="3nn-t7-HOy" secondAttribute="trailing" constant="20" id="UAU-zr-jUH"/>
+                                    <constraint firstItem="3nn-t7-HOy" firstAttribute="leading" secondItem="2vw-Y4-oiB" secondAttribute="leading" constant="20" id="c22-Wr-QIM"/>
+                                    <constraint firstItem="3nn-t7-HOy" firstAttribute="centerX" secondItem="2vw-Y4-oiB" secondAttribute="centerX" id="scb-jC-T94"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="H5D-fg-4gK"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="H5D-fg-4gK" firstAttribute="bottom" secondItem="2vw-Y4-oiB" secondAttribute="bottom" id="NL3-dj-ymd"/>
+                            <constraint firstItem="2vw-Y4-oiB" firstAttribute="trailing" secondItem="H5D-fg-4gK" secondAttribute="trailing" id="ayK-1H-kn7"/>
+                            <constraint firstItem="2vw-Y4-oiB" firstAttribute="leading" secondItem="H5D-fg-4gK" secondAttribute="leading" id="l0m-Zx-ccE"/>
+                            <constraint firstItem="2vw-Y4-oiB" firstAttribute="top" secondItem="H5D-fg-4gK" secondAttribute="top" id="xDU-cQ-hwt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rpPickerView" destination="VQI-7T-HYs" id="lRD-Ru-jb8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L23-Mb-eRm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476.81159420289856" y="-925.44642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tv" catalog="system" width="128" height="97"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
